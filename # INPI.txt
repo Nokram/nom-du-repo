@@ -1,0 +1,29 @@
+## Log INPI :
+alexis.marcon@nokram.ovh
+HBro5KK6U@zf
+
+## Connexion SSH VPS Test :
+ubuntu@46.105.92.69
+2qDwrXG9ZVkm
+
+## Configurer le VPS avec R :
+sudo apt update
+sudo apt upgrade
+sudo apt install r-base r-base-core
+R --version
+Rscript --version
+sudo apt install libcurl4-openssl-dev
+sudo apt install libssl-dev
+sudo apt install libpq-dev
+
+## Lancer le script (installer manuellement les packages pour des questions d'écriture) :
+mkdir R
+cd R
+R
+install.packages("httr")
+install.packages("DBI")
+install.packages("RPostgres")
+install.packages("dplyr")
+install.packages("jsonlite")
+q() -> n
+R -q --vanilla < data_collector.R
